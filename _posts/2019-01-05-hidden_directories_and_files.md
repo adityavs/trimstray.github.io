@@ -3,7 +3,7 @@ layout: post
 title: "Hidden directories and files"
 date: 2019-01-05 00:10:52
 categories: [PL, security]
-tags: talks
+tags: [talks]
 comments: false
 favorite: false
 ---

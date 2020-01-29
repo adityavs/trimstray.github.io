@@ -3,7 +3,7 @@ layout: post
 title: "The Art of Command Line"
 date: 2018-09-12 08:57:52
 categories: [PL, shell]
-tags: talks
+tags: [talks]
 comments: false
 favorite: false
 ---
