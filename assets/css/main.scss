@@ -13,8 +13,7 @@
 
 html, body {
   height: 100%;
-  /* font-size: 16px; */
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Solved jumping scrollbar */
@@ -27,7 +26,8 @@ body {
   background: var(--main-wrapper-bg, #fafafa);
   color: var(--text-color, #212529);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+  /* font-family: 'Source Sans Pro', 'Microsoft Yahei', sans-serif; */
+  font-family: Geneva, Arial, Helvetica, sans-serif;
 }
 
 /*--- sidebar layout ---*/
@@ -573,12 +573,12 @@ footer .license a {
 
 h1 {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 1.35rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h3 {
@@ -1324,7 +1324,7 @@ div.tooltip-inner { /* Overrided BS4 Tooltip */
   }
 
   #sidebar .nav-link>span {
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
   #sidebar .nav-link>i {
