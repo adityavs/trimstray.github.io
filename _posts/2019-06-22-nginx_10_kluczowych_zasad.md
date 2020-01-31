@@ -14,11 +14,7 @@ Istnieje wiele rzeczy, które możesz zrobić, aby ulepszyć konfigurację serwe
 
 # 1) Zdefiniuj dyrektywy nasłuchiwania za pomocą pary adres:port
 
-NGINX tłumaczy wszystkie niepełne dyrektywy `listen` zastępując brakujące wartości ich wartościami domyślnymi.
-
-Co więcej, oceni dyrektywę `server_name` tylko wtedy, gdy będzie musiał rozróżnić bloki serwera pasujące do tego samego poziomu w dyrektywie `listen`.
-
-Ustawienie pary **adres:port** zapobiega subtelnym błędom, które mogą być trudne do debugowania.
+NGINX tłumaczy wszystkie niepełne dyrektywy `listen` zastępując brakujące wartości ich wartościami domyślnymi. Co więcej, oceni dyrektywę `server_name` tylko wtedy, gdy będzie musiał rozróżnić bloki serwera pasujące do tego samego poziomu w dyrektywie `listen`. Ustawienie pary **adres:port** zapobiega subtelnym błędom, które mogą być trudne do debugowania.
 
 Na przykład, jeżeli mamy w konfiguracji dyrektywę `listen *:80` i kilka bloków `server`, w których zdiefiniowana jest ta dyrektywa, zostanie ona uzupełniona i w wyniku będzie wyglądać tak: `listen 0.0.0.0:80`. Następnie dodając w którymś miejscu konfiguracji `listen 192.168.50.2:80` wszystkie bloki `server` zawierające pierwszą dyrektywę `listen` (uzupełnioną przez NGINX) będą miały niższy priorytet i nie będą przetwarzane (request z nagłówkiem `Host` niepasujący do `server_name` wpadnie do dyrektywy `listen` oznaczonej jako `default_server` - jawnie wskazanej, lub jeśli nie, pierwszej w konfiguracji).
 
