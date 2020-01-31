@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTTPS on Stack Overflow
+title: "HTTPS on Stack Overflow"
 date: 2018-11-25 11:21:26
 categories: [PL, ssl]
 tags: [talks]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NGINX: 10 kluczowych zasad
+title: "NGINX: 10 kluczowych zasad"
 date: 2019-06-22 09:17:04
 categories: [PL, http, nginx, best-practices]
 tags: [publications]
@@ -12,7 +12,7 @@ Istnieje wiele rzeczy, które możesz zrobić, aby ulepszyć konfigurację serwe
 
 # Spis treści
 
-- **[Opis wybranych przekierowań](#opis-wybranych-przekierowań)**
+- **[Zdefiniuj dyrektywy nasłuchiwania za pomocą pary adres:port](#zdefiniuj-dyrektywy-nasłuchiwania-za-pomocą-pary-adresport)**
 
 # Zdefiniuj dyrektywy nasłuchiwania za pomocą pary adres:port
 

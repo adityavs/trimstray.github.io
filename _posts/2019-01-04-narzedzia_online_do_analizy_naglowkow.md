@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Narzędzia online do analizy nagłówków
+title: "Narzędzia online do analizy nagłówków"
 date: 2019-01-04 19:47:15
 categories: [PL, http, headers]
 tags: [publications]

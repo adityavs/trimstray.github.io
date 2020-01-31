@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Katalog .git w web aplikacji
+title: "Katalog .git w web aplikacji"
 date: 2018-03-09 14:43:32
 categories: [PL, security, nginx, varnish, git]
 tags: [publications]

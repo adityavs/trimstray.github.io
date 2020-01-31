@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Metoda POST i przekierowania
+title: "Metoda POST i przekierowania"
 date: 2018-03-09 08:30:26
 categories: [PL, web, post, redirects]
 tags: [publications]
