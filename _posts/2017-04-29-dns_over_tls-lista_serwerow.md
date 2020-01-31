@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-01-29 14:26:13 +0100
+  date_modified: 2020-01-31 08:07:19 +0100
 ---
 
 Poniższa lista zawiera serwery DNS będące alternatywą dla chyba najczęściej wykorzystywanych serwerów rozwiązywania nazw - Google i OpenDNS.

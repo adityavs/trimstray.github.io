@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-01-29 14:26:13 +0100
+  date_modified: 2020-01-31 08:07:19 +0100
 ---
 
 Niedawno jednym z problemów przed jakim miałem okazję stanąć było umożliwienie przekazania całej zawartości ładunku kierowanego pod dany adres za pomocą metody **POST** z którego miało nastąpić przekierowanie pod inny adres.
