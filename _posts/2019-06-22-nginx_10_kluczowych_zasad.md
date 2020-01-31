@@ -18,19 +18,25 @@ Istnieje wiele rzeczy, które możesz zrobić, aby ulepszyć konfigurację serwe
 
 # Zdefiniuj dyrektywy nasłuchiwania za pomocą pary adres:port
 
-NGINX tłumaczy wszystkie niepełne dyrektywy `listen`, zastępując brakujące wartości ich wartościami domyślnymi.
+NGINX tłumaczy wszystkie niepełne dyrektywy `listen` zastępując brakujące wartości ich wartościami domyślnymi.
 
 Co więcej, oceni dyrektywę `server_name` tylko wtedy, gdy będzie musiał rozróżnić bloki serwera pasujące do tego samego poziomu w dyrektywie `listen`.
 
-Ustawienie pary adres:port zapobiega subtelnym błędom, które mogą być trudne do debugowania. Ponadto brak adresu IP oznacza powiązanie ze wszystkimi adresami IP w systemie, co może powodować wiele problemów i co do zasady jest bardzo złą praktyką – zaleca się konfigurowanie tylko minimalnego dostępu do sieci dla usług.
+Ustawienie pary **adres:port** zapobiega subtelnym błędom, które mogą być trudne do debugowania, np. jeżeli mamy w konfiguracji dyrektywę `listen *:80` i kilka bloków `server`, w których zdiefiniowana jest ta dyrektywa, zostanie ona uzupełniona i w wyniku będzie wyglądać tak: `listen 0.0.0.0:80`. Następnie dodając w którymś miejscu konfiguracji `listen 192.168.50.2:80` wszystkie bloki `server` zawierające pierwszą dyrektywę `listen` (uzupełnioną przez NGINX) będą miały niższy priorytet i nie będę przetwarzane (request z nagłówkiem `Host` niepasującym do `server_name` wpadnie do dyrektywy `listen` oznaczonej jako `default_server`.
+
+Ponadto brak adresu IP oznacza powiązanie ze wszystkimi adresami IP w systemie, co może powodować wiele problemów i co do zasady jest bardzo złą praktyką – zaleca się konfigurowanie tylko minimalnego dostępu do sieci dla usług.
 
 Przykład:
 
-```nginx
-# Testowy request:
-$ curl -Iks http://api.random.com
+- testowy request:
 
-# Po stronie serwera:
+```bash
+$ curl -Iks http://api.random.com
+```
+
+- konfiguracja po stronie serwera:
+
+```nginx
 server {
 
   # Ten blok będzie przetwarzany!
