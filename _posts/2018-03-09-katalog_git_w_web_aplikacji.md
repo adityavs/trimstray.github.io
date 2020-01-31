@@ -69,7 +69,7 @@ Zabezpieczeniem, które należy wprowadzić w konfiguracji Varnish'a i to niezal
 
 Wygląda to tak:
 
-```varnish
+```bash
 sub vcl_recv {
 
   if (req.url ~ "\.git") {
