@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "NGINX: 10 kluczowych zasad"
+title: 'NGINX: 10 kluczowych zasad'
 date: 2019-06-22 09:17:04
 categories: [PL, http, nginx, best-practices]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-01-31 09:36:05 +0100
 ---
 
 Istnieje wiele rzeczy, które możesz zrobić, aby ulepszyć konfigurację serwera NGINX. W tym wpisie przedstawię 10 zasad, moim zdaniem bardzo ważnych, które bezwzględnie należy stosować podczas konfiguracji. Niektóre są pewnie oczywiste, inne może nie.
