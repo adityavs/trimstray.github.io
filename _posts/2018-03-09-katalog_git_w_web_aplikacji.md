@@ -69,7 +69,7 @@ Zabezpieczeniem, które należy wprowadzić w konfiguracji Varnish'a i to niezal
 
 Wygląda to tak:
 
-```bash
+```varnish
 sub vcl_recv {
 
   if (req.url ~ "\.git") {
@@ -87,7 +87,7 @@ W przypadku serwera **NGINX** przechwytywany ciąg znaków jest oczywiście ten 
 
 Wygląda to mniej więcej tak:
 
-```bash
+```nginx
 listen 192.168.252.2:443 ssl;
 
 # Headers, SSL configuration, and other.
@@ -101,7 +101,7 @@ if ($request_uri ~ "/\.git") {
 
 W przypadku dyrektywy **location** konfiguracja może wyglądać tak:
 
-```bash
+```nginx
 location ~ "/\.git" {
 
   deny all;
@@ -111,7 +111,7 @@ location ~ "/\.git" {
 
 Prostym filtrem, który zawsze stosuję jest:
 
-```bash
+```nginx
 location ~* ^.*(\.(?:git|svn|hg|bak|bckp|save|old|orig|original|test|conf|cfg|dist|in[ci]|log|sql|mdb|sw[op]|htaccess|php#|php~|php_bak|aspx?|tpl|sh|bash|bin|exe|dll|jsp|out|cache|))$ {
 
   # Use also rate limiting:

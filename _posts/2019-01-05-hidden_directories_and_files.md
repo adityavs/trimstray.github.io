@@ -10,4 +10,4 @@ seo:
   date_modified: 2020-01-29 14:26:13 +0100
 ---
 
-Ogromna dawka wiedzy na bardzo ciekawy, krytyczny oraz często zapomniany przez programistów/administratorów temat jakim są <a href="https://medium.com/@_bl4de/hidden-directories-and-files-as-a-source-of-sensitive-information-about-web-application-84e5c534e5ad" target="_blank"><b>ukryte katalogi i pliki</b></a> będące cennym źródłem poufnych informacji o aplikacji internetowej.
+Ogromna dawka wiedzy na bardzo ciekawy, krytyczny w kontekście bezpieczeństwa oraz często zapomniany przez programistów/administratorów temat jakim są <a href="https://medium.com/@_bl4de/hidden-directories-and-files-as-a-source-of-sensitive-information-about-web-application-84e5c534e5ad" target="_blank"><b>ukryte katalogi i pliki</b></a> będące cennym źródłem poufnych informacji o aplikacji internetowej.

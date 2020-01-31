@@ -12,11 +12,11 @@ seo:
 
 Poniższa lista zawiera serwery DNS będące alternatywą dla chyba najczęściej wykorzystywanych serwerów rozwiązywania nazw - Google i OpenDNS.
 
-Każdy z poniższych dostawców zapewnia, że nie będzie rejestrował zapytań do ich serwerów zapewniając anonimowość. Oczywiście zawsze podchodzę do tego z dużym dystansem. Zwłaszcza jeżeli planuję jako resolver'y wykorzystać serwery nazw Google, Quad9 czy Cloudflare <sup>[[1](https://www.reddit.com/r/privacy/comments/88qyf1/9999_vs_1111_dns_resolvers/), [2](https://www.reddit.com/r/sevengali/comments/8fy15e/dns_cloudflare_quad9_etc/)]</sup>.
+Każdy z poniższych dostawców zapewnia, że nie będzie rejestrował zapytań do ich serwerów zapewniając anonimowość. Oczywiście takie zapewnienia należy dzielić na pół i zawsze podchodzić do tego z dużym dystansem. Zwłaszcza jeżeli planujecie jako resolwery wykorzystać serwery nazw Google, Quad9 czy Cloudflare <sup>[[1](https://www.reddit.com/r/privacy/comments/88qyf1/9999_vs_1111_dns_resolvers/), [2](https://www.reddit.com/r/sevengali/comments/8fy15e/dns_cloudflare_quad9_etc/)]</sup>.
 
   > Jeżeli zależy Tobie na prywatności skorzystaj z serwerów wykorzystujących protokoły SSL/TLS (port: 853).
 
-Dodatkowo warto śledzić listę publicznych resolver'ów organizacji **[DNSPrivacy](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers)**.
+Dodatkowo warto śledzić listę publicznych ns'ów organizacji **[DNSPrivacy](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers)**.
 
 # Spis treści
 

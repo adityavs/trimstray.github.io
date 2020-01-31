@@ -12,9 +12,7 @@ seo:
 
 Niedawno jednym z problemów przed jakim miałem okazję stanąć było umożliwienie przekazania całej zawartości ładunku kierowanego pod dany adres za pomocą metody **POST** z którego miało nastąpić przekierowanie pod inny adres.
 
-Nie dało się tego załatwić za pomocą standardowych przekierowań, tj. **301** i **302**.
-
-Rozwiązaniem było wykorzystanie przekierowania o kodzie **307** lub **308** tylko dla metody `POST`, której cała zawartość miała zostać przekazana dalej.
+Nie dało się tego załatwić za pomocą standardowych przekierowań, tj. **301** i **302**. Rozwiązaniem było wykorzystanie przekierowania o kodzie **307** lub **308** tylko dla metody `POST`, której cała zawartość miała zostać przekazana dalej.
 
 # Spis treści
 
@@ -54,7 +52,7 @@ Poniżej znajduje się krótki opis wybranych:
 
 Przykład poprawnej konfiguracji dla serwera NGINX:
 
-```bash
+```nginx
 location / {
 
   proxy_pass              http://localhost:80;

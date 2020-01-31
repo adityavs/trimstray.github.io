@@ -14,7 +14,7 @@ Krótka lista dwóch świetnych narzędzi za pomocą których przetestujemy nag�
 
 Nagłówki są jedną z ważniejszych warstw zabezpieczeń Naszej aplikacji. W wielu przypadkach są one bardzo łatwe do wdrożenia i ustawienie większości z nich odbywa się bezkosztowo dla serwisu, który upubliczniamy.
 
-Narzędzia do ich testowania zapewniają zgodność z najlepszymi praktykami, mówią które wartości nagłówków są niepoprawne lub niebezpieczne, podają przykłady poprawnej konfiguracji, określają których nagłówków brakuje oraz oceniają ich ogólną poprawność w skali punktowej.
+Narzędzia do ich testowania zapewniają zgodność z najlepszymi praktykami, mówią które wartości nagłówków są niepoprawne lub potencjalnie niebezpieczne, podają przykłady poprawnej konfiguracji, określają których nagłówków brakuje oraz oceniają ich ogólną poprawność w skali punktowej.
 
 Narzędzie firmy Mozilla dostępne jest także w wersji [konsolowej](https://github.com/mozilla/observatory-cli).
 

@@ -10,4 +10,4 @@ seo:
   date_modified: 2020-01-29 14:26:13 +0100
 ---
 
-<a href="https://github.com/jlevy/the-art-of-command-line" target="_blank"><b>The Art of Command Line</b></a> jest świetnym zbiorem notatek i wskazówek związanych z wierszem poleceń i ogólnie z pracą z systemami GNU/Linux oraz BSD. Początkujący jak i zaawansowani użytkownicy znajdą tutaj dużą dawkę wiedzy.
+<a href="https://github.com/jlevy/the-art-of-command-line" target="_blank"><b>The Art of Command Line</b></a> jest świetnym zbiorem notatek i wskazówek związanych z wierszem poleceń i ogólnie z pracą z systemami GNU/Linux oraz BSD. Początkujący jak i zaawansowani użytkownicy znajdą tutaj wiele cennych porad i zaleceń.
