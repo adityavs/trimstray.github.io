@@ -14,13 +14,6 @@ Jednym z często popełnianych błędów, który stwarza ogromny problem i narus
 
 Jako administratorzy powinniśmy mieć pełną kontrolę nad udostępnianymi zasobami z serwisów produkcyjnych, które obsługujemy - i nie chodzi tutaj tylko o ruch wychodzący z serwerów backend'owych. Bardzo często developerzy przemycą zasoby, które będą dostępne na świat lub po prostu zapomną dodać odpowiednich reguł filtrujących po swojej stronie.
 
-# Spis treści
-
-- **[Wprowadzenie](#wprowadzenie)**
-- **[Konfiguracja](#konfiguracja)**
-  * [Varnish](#varnish)
-  * [NGINX](#nginx)
-
 # Wprowadzenie
 
 Często niestety się zdarza, że takim zasobem jest katalog `.git`, którego pobranie przez osobę nieuprawnioną pozwala na uzyskanie praktycznie wszystkich informacji o danym projekcie.

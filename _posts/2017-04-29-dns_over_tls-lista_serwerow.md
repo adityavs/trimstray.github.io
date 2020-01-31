@@ -18,17 +18,6 @@ Każdy z poniższych dostawców zapewnia, że nie będzie rejestrował zapytań 
 
 Dodatkowo warto śledzić listę publicznych ns'ów organizacji **[DNSPrivacy](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Test+Servers)**.
 
-# Spis treści
-
-- **[Lista serwerów DNS](#lista-serwerów-dns)**
-  * [DNSPrivacy](#dnsprivacy)
-  * [Sinodun](#sinodun)
-  * [DNS.watch](#dnswatch)
-  * [FreeDNS](#freedns)
-  * [Censurfridns.dk](#censurfridnsdk)
-  * [OpenNIC](#opennic)
-  * [Privacyfoundation.ch](#privacyfoundationch)
-
 # Lista serwerów DNS
 
 ## DNSPrivacy

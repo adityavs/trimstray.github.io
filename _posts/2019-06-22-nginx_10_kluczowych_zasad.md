@@ -12,12 +12,6 @@ seo:
 
 Istnieje wiele rzeczy, które możesz zrobić, aby ulepszyć konfigurację serwera NGINX. W tym wpisie przedstawię 10 zasad, moim zdaniem bardzo ważnych, które bezwzględnie należy stosować podczas konfiguracji. Niektóre są pewnie oczywiste, inne może nie.
 
-# Spis treści
-
-- **[Zdefiniuj dyrektywy nasłuchiwania za pomocą pary adres:port](#zdefiniuj-dyrektywy-nasłuchiwania-za-pomocą-pary-adresport)**
-- **[Zapobiegaj przetwarzaniu żądań przy użyciu niezdefiniowanych nazw serwerów](#zapobiegaj-przetwarzaniu-żądań-przy-użyciu-niezdefiniowanych-nazw-serwerów)**
-- **[Obsługuj nagłówki HTTP za pomocą dyrektyw `add_header` i `proxy_*_` w poprawny sposób](#obsługuj-nagłówki-http-za-pomocą-dyrektyw-add_header-i-proxy__-w-poprawny-sposób)**
-
 # Zdefiniuj dyrektywy nasłuchiwania za pomocą pary adres:port
 
 NGINX tłumaczy wszystkie niepełne dyrektywy `listen` zastępując brakujące wartości ich wartościami domyślnymi.
@@ -360,7 +354,7 @@ http {
 }
 ```
 
-# Używaj dyrektywy `return` zamiast `rewrite` dla przekierowań
+# Używaj dyrektywy return zamiast rewrite dla przekierowań
 
 To prosta zasada. Możliwość przepisywania adresów URL w NGINX jest niezwykle potężną i ważną funkcją. Technicznie możesz użyć obu opcji, ale moim zdaniem powinieneś używać bloków serwera z wykorzystaniem modułu przepisywania stosując dyrektywę `return`, ponieważ są one znacznie szybsze niż ocena wyrażeń regularnych, np. poprzez bloki lokalizacji.
 
@@ -369,4 +363,3 @@ Dla każdego żądania NGINX musi przetworzyć i rozpocząć wyszukiwanie. Dyrek
 Dodatkowo jest to prostsze i szybsze, ponieważ NGINX przestaje przetwarzać żądanie (i nie musi przetwarzać wyrażeń regularnych). Co więcej, możesz podać kod z serii 3xx.
 
 Jeśli masz scenariusz, w którym musisz zweryfikować adres URL za pomocą wyrażenia regularnego lub musisz przechwycić elementy w oryginalnym adresie URL (które oczywiście nie znajdują się w odpowiedniej zmiennej NGINX), wtedy powinieneś użyć przepisania.
-

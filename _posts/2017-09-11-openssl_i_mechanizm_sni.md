@@ -12,17 +12,6 @@ seo:
 
 Często zdarza mi się testować połączenia do aplikacji chronionych protokołem SSL/TLS. Za pomocą biblioteki `openssl` możemy testować **każdą** usługę działającą na tych protokołach. Po nawiązaniu połączenia można nim sterować stosując komendy/wiadomości dla każdego protokołu warstwy aplikacji.
 
-# Spis treści
-
-- **[Czym jest rozszerzenie SNI?](#czym-jest-rozszerzenie-sni)**
-  * [Proces nawiązywania połączenia](#proces-nawiązywania-połączenia)
-  * [Szczegóły połączenia](#szczegóły-połączenia)
-  * [SNI a Subject Alternative Name (SAN)](#sni-a-subject-alternative-name-san)
-  * [SNI a klient](#sni-a-klient)
-- **[Testowanie połączenia](#testowanie-połączenia)**
-  * [OpenSSL](#openssl)
-  * [gnutls-cli](#gnutls-cli)
-
 # Czym jest rozszerzenie SNI?
 
 **SNI** (ang. _Server Name Indication_) jest rozszerzeniem protokołu TLS, które umożliwia serwerom używanie wielu certyfikatów na jednym adresie IP.

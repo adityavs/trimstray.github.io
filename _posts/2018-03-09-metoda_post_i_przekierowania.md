@@ -14,12 +14,6 @@ Niedawno jednym z problemów przed jakim miałem okazję stanąć było umożliw
 
 Nie dało się tego załatwić za pomocą standardowych przekierowań, tj. **301** i **302**. Rozwiązaniem było wykorzystanie przekierowania o kodzie **307** lub **308** tylko dla metody `POST`, której cała zawartość miała zostać przekazana dalej.
 
-# Spis treści
-
-- **[Opis wybranych przekierowań](#opis-wybranych-przekierowań)**
-  * [Porównanie](#porównanie)
-- **[Przykład konfiguracji](#przykład-konfiguracji)**
-
 # Opis wybranych przekierowań
 
 Protokół **HTTP** definiuje kilka typów przekierowań. Najczęściej wykorzystywane są te o kodach **301** oraz **302**.
