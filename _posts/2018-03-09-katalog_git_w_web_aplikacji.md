@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-01-31 09:36:05 +0100
+  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Jednym z często popełnianych błędów, który stwarza ogromny problem i narusza polityki bezpieczeństwa aplikacji jest udostępnianie katalogu `.git` w zasobach publicznych.

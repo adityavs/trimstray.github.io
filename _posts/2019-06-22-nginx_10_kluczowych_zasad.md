@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-01-31 09:36:05 +0100
+  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Istnieje wiele rzeczy, które możesz zrobić, aby ulepszyć konfigurację serwera NGINX. W tym wpisie przedstawię 10 zasad, moim zdaniem bardzo ważnych, które bezwzględnie należy stosować podczas konfiguracji. Niektóre są pewnie oczywiste, inne może nie.

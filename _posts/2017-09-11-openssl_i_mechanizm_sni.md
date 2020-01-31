@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-01-31 09:36:05 +0100
+  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Często zdarza mi się testować połączenia do aplikacji chronionych protokołem SSL/TLS. Za pomocą biblioteki `openssl` możemy testować **każdą** usługę działającą na tych protokołach. Po nawiązaniu połączenia można nim sterować stosując komendy/wiadomości dla każdego protokołu warstwy aplikacji.
