@@ -678,7 +678,7 @@ p>a, span>a,
 #archives a,
 #search-results a {
   color: var(--link-color, #2a408e);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .categories a,
@@ -704,7 +704,8 @@ footer a:hover,
 #post-wrapper .post-content a:hover,
 #page .post-content a:hover,
 #access-lastmod a:hover {
-  color: #d2603a;
+  /* color: #d2603a; */
+  color: tomato;
   border-bottom: 1px solid #d2603a;
   text-decoration: none;
 }
