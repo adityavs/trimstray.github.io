@@ -362,7 +362,7 @@ Jeśli masz scenariusz, w którym musisz zweryfikować adres URL za pomocą wyra
 
 Przykład:
 
-- konfiguracja nie zalecana:
+- nie zalecana konfiguracja:
 
 ```nginx
 server {
@@ -382,7 +382,7 @@ server {
 }
 ```
 
-- konfiguracja zalecana:
+- zalecana konfiguracja:
 
 ```nginx
 server {
