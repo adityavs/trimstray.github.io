@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-02-06 08:30:22 +0100
+  date_modified: 2020-02-07 11:27:46 +0100
 ---
 
 W maju 2019 r. inżynierowie Netflixa odkryli szereg luk bezpieczeństwa w kilku implementacjach HTTP/2. Zostały one zgłoszone każdemu z zainteresowanych dostawców i opiekunów. NGINX był podatny na trzy wektory ataku, jak opisano szczegółowo w następujących CVE:
