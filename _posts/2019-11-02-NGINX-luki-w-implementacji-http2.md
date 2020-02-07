@@ -30,8 +30,8 @@ Od 2 września 2019 r. najnowszą obsługiwaną wersją jest:
 
 ## Rozwiązania
 
-- aktualizacja NGINX do najnowszej wersji, np. dla FreeBSD 1.16.1-10.2 w której podatności zostały rozwiązane we wcześniejszej rewizji (**[508898](https://svnweb.freebsd.org/ports?view=revision&revision=508898)** + **[1.16.1-0.2](https://svnweb.freebsd.org/ports/head/www/nginx/Makefile?revision=508898&view=markup&pathrev=508898)**)
-- wyłączenie ujawnienia wersji NGINX za pomocą `server_tokens off;`
+- aktualizacja NGINX, np. dla FreeBSD do wersji 1.16.1-0.2 w której podatności zostały wyeliminowane (**[508898](https://svnweb.freebsd.org/ports?view=revision&revision=508898)** + **[1.16.1-0.2](https://svnweb.freebsd.org/ports/head/www/nginx/Makefile?revision=508898&view=markup&pathrev=508898)**)
+- dodatkowo wyłączenie ujawnienia wersji NGINX za pomocą `server_tokens off;`
 
 ## CVE-2019-9511 (HTTP/2 Denial of Service Advisory)
 
