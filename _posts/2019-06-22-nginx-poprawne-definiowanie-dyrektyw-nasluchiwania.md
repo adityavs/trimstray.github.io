@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-02-06 08:30:22 +0100
+  date_modified: 2020-02-06 08:32:00 +0100
 ---
 
 NGINX tłumaczy wszystkie niepełne dyrektywy `listen` zastępując brakujące wartości ich wartościami domyślnymi. Co więcej, oceni dyrektywę `server_name` tylko wtedy, gdy będzie musiał rozróżnić bloki serwera pasujące do tego samego poziomu w dyrektywie `listen`. Ustawienie pary `adres:port` zapobiega subtelnym błędom, które mogą być trudne do debugowania.
