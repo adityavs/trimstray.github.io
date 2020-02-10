@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'NGINX: Poprawne definiowanie dyrektyw nasłuchiwania'
-date: 2019-06-22 09:17:04
+date: 2018-12-21 09:17:04
 categories: [PL, http, nginx, best-practice]
 tags: [publications]
 comments: false
