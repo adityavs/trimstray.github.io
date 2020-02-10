@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'NGINX: Zapobiegaj przetwarzaniu żądań przy użyciu niezdefiniowanych nazw serwerów'
+title: 'NGINX: Przetwarzanie żądań przy użyciu niezdefiniowanych nazw serwerów'
 date: 2018-04-19 12:42:51
 categories: [PL, http, nginx, best-practice]
 tags: [publications]
