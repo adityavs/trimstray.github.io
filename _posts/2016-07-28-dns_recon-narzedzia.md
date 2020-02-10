@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DNS Recon - narzędzia
-date: 2017-11-28 01:25:31
+date: 2016-07-28 01:25:31
 categories: [PL, pentests, tools]
 tags: [publications]
 comments: false

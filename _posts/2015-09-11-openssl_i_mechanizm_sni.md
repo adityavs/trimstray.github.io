@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenSSL i mechanizm SNI
-date: 2017-09-11 07:51:13
+date: 2015-09-11 07:51:13
 categories: [PL, security, openssl]
 tags: [publications]
 comments: false
