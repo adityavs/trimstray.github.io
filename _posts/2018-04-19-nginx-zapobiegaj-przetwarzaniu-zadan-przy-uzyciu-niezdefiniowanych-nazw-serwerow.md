@@ -6,6 +6,8 @@ categories: [PL, http, nginx, best-practice]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-01-31 09:36:05 +0100
 ---
 
 Zastosowanie tej reguły chroni przed błędami konfiguracji, np. przekazywanie ruchu do niepoprawnych backendów, omijając filtry takie jak ACL lub WAF. Problem można łatwo rozwiązać, tworząc domyślny "fałszywy" vhost, który przechwytuje wszystkie żądania z nierozpoznanymi nagłówkami hosta.
