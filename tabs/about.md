@@ -22,6 +22,6 @@ At this moment all publications are only in Polish.
 
 If you wish to contact me:
 
-- hit me on [Twitter](https://twitter.com/trimstray) or [Keybase](https://keybase.io/trimstray)
+- hit me on [Twitter](https://twitter.com/trimstray), [Keybase](https://keybase.io/trimstray) or [GitHub](https://github.com/trimstray),
 - via e-mail (base64): `dHJpbXN0cmF5QGdtYWlsLmNvbQo=`
 - sometimes on TorChat: `ltcpwvt5tfdoaseo`
