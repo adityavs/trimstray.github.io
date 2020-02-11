@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Katalog .git w web aplikacji
+title: "Katalog .git w web aplikacji"
 date: 2018-03-09 14:43:32
 categories: [PL, security, nginx, varnish, git]
 tags: [publications]
 comments: false
 favorite: false
-seo:
-  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Jednym z często popełnianych błędów, który stwarza ogromny problem i narusza polityki bezpieczeństwa aplikacji jest udostępnianie katalogu `.git` w zasobach publicznych.

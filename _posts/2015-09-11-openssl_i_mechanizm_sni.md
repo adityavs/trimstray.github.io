@@ -1,13 +1,11 @@
 ---
 layout: post
-title: OpenSSL i mechanizm SNI
+title: "OpenSSL i mechanizm SNI"
 date: 2015-09-11 07:51:13
 categories: [PL, security, openssl]
 tags: [publications]
 comments: false
 favorite: false
-seo:
-  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Często zdarza mi się testować połączenia do aplikacji chronionych protokołem SSL/TLS. Za pomocą biblioteki `openssl` możemy testować **każdą** usługę działającą na tych protokołach. Po nawiązaniu połączenia można nim sterować stosując komendy/wiadomości dla każdego protokołu warstwy aplikacji.

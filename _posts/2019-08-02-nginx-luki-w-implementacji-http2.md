@@ -1,13 +1,11 @@
 ---
 layout: post
-title: 'NGINX: Luki w implementacji HTTP/2'
-date: 2019-11-02 17:25:31
+title: "NGINX: Luki w implementacji HTTP/2"
+date: 2019-08-02 17:25:31
 categories: [PL, http, nginx, vulnerabilities]
 tags: [publications]
 comments: false
 favorite: false
-seo:
-  date_modified: 2020-02-07 11:27:46 +0100
 ---
 
 W maju 2019 r. inżynierowie Netflixa odkryli szereg luk bezpieczeństwa w kilku implementacjach HTTP/2. Zostały one zgłoszone każdemu z zainteresowanych dostawców i opiekunów. NGINX był podatny na trzy wektory ataku, jak opisano szczegółowo w następujących CVE:

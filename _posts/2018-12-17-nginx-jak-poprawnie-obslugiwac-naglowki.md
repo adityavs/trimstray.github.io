@@ -1,13 +1,11 @@
 ---
 layout: post
-title: 'NGINX: Jak poprawnie obsługiwać nagłówki?'
+title: "NGINX: Jak poprawnie obsługiwać nagłówki?"
 date: 2018-12-17 21:04:12
 categories: [PL, http, nginx, best-practices]
 tags: [publications]
 comments: false
 favorite: false
-seo:
-  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Nagłówki to jedna z najistotniejszych rzeczy podczas komunikacji między klientem a serwerem. NGINX dostarcza kilka sposobów ich obsługi, lecz nieodpowiednie użycie któregoś z nich może spowodować poważne problemy (w tym np. naruszenie zasada bezpieczeństwa!).

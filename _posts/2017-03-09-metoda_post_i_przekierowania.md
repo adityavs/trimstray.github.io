@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Metoda POST i przekierowania
+title: "Metoda POST i przekierowania"
 date: 2017-03-09 08:30:26
 categories: [PL, web, post, redirects]
 tags: [publications]
 comments: false
 favorite: false
-seo:
-  date_modified: 2020-01-31 13:18:24 +0100
 ---
 
 Niedawno jednym z problemów przed jakim miałem okazję stanąć było umożliwienie przekazania całej zawartości ładunku kierowanego pod dany adres za pomocą metody **POST** z którego miało nastąpić przekierowanie pod inny adres.
