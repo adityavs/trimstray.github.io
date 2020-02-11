@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "NGINX: Poprawne definiowanie dyrektyw nasłuchiwania"
+title: 'NGINX: Poprawne definiowanie dyrektyw nasłuchiwania'
 date: 2017-10-21 09:17:04
 categories: [PL, http, nginx, best-practice]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-02-11 09:19:12 +0100
 ---
 
 NGINX tłumaczy wszystkie niepełne dyrektywy `listen` zastępując brakujące wartości ich wartościami domyślnymi. Co więcej, oceni dyrektywę `server_name` tylko wtedy, gdy będzie musiał rozróżnić bloki serwera pasujące do tego samego poziomu w dyrektywie `listen`. Ustawienie pary `adres:port` zapobiega subtelnym błędom, które mogą być trudne do debugowania.

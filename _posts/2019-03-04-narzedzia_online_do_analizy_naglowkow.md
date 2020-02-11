@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Narzędzia online do analizy nagłówków"
+title: Narzędzia online do analizy nagłówków
 date: 2019-03-04 19:47:15
 categories: [PL, http, headers]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-02-11 09:19:12 +0100
 ---
 
 Krótka lista dwóch świetnych narzędzi za pomocą których przetestujemy nagłówki odpowiedzi protokołów http/https.

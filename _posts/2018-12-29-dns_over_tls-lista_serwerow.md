@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "DNS over TLS - lista serwerów"
+title: DNS over TLS - lista serwerów
 date: 2018-12-29 16:31:02
 categories: [PL, dns, tls]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-02-11 09:19:12 +0100
 ---
 
 Poniższa lista zawiera serwery DNS będące alternatywą dla chyba najczęściej wykorzystywanych serwerów rozwiązywania nazw - Google i OpenDNS.

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "OpenSSH - sekwencje sterujące"
+title: OpenSSH - sekwencje sterujące
 date: 2016-01-02 23:01:38
 categories: [PL, system, openssh]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-02-11 09:19:12 +0100
 ---
 
 Klient SSH udostępnia **dodatkowe sekwencje sterujące** za pomocą których można wykonywać przydatne akcje. Normalne znaki przekazywane są przez zestawioną sesję SSH więc żadne z nich nie będą działać w przypadku wykonania specjalnych czynności.

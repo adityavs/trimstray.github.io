@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "DNS Recon - narzędzia"
+title: DNS Recon - narzędzia
 date: 2016-07-28 01:25:31
 categories: [PL, pentests, tools]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-02-11 09:19:12 +0100
 ---
 
 Krótki wpis, w którym przedstawione zostaną wykorzystywane przeze mnie narzędzia pomocne przy rekonesansie jednej z kluczowych usług jaką jest **DNS**.

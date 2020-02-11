@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "NGINX: Przetwarzanie żądań przy użyciu niezdefiniowanych nazw serwerów"
+title: 'NGINX: Przetwarzanie żądań przy użyciu niezdefiniowanych nazw serwerów'
 date: 2018-04-19 12:42:51
 categories: [PL, http, nginx, best-practice]
 tags: [publications]
 comments: false
 favorite: false
+seo:
+  date_modified: 2020-02-11 09:19:12 +0100
 ---
 
 Zastosowanie tej reguły chroni przed błędami konfiguracji, np. przekazywanie ruchu do niepoprawnych backendów, omijając filtry takie jak ACL lub WAF. Problem można łatwo rozwiązać, tworząc domyślny "fałszywy" vhost, który przechwytuje wszystkie żądania z nierozpoznanymi nagłówkami hosta.
