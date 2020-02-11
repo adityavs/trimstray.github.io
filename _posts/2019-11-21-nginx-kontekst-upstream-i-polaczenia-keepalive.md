@@ -8,13 +8,17 @@ comments: false
 favorite: false
 ---
 
-Ideą mechanizmu `Keep-Alive` jest zajęcie się opóźnieniami w nawiązywaniu połączeń TCP w sieciach o dużych opóźnieniach. Ta pamięć podręczna połączeń jest przydatna w sytuacjach, gdy NGINX musi stale utrzymywać pewną liczbę otwartych połączeń z serwerem z warstwy backendu.
+Oryginalny model HTTP (w tym HTTP/1.0) definiuje połączenia krótkotrwałe jako standardową metodę komunikacji. Każde żądanie HTTP jest realizowane we własnym połączeniu; oznacza to, że uzgadnianie TCP następuje przed każdym żądaniem. Klient tworzy nowe połączenie TCP dla każdej sesji (a połączenie zostaje zerwane po zakończeniu sesji).
 
-Połączenia `Keep-Alive` mogą mieć znaczący wpływ na wydajność, zmniejszając obciążenie procesora i sieci potrzebne do otwierania i zamykania połączeń. Z włączonym podtrzymywaniem HTTP w serwerach upstream NGINX zmniejsza opóźnienia, a tym samym poprawia wydajność i zmniejsza prawdopodobieństwo, że zabraknie portów efemerycznych.
+Ideą mechanizmu `Keep-Alive` jest zmniejszenie opóźnień po przez redukcję połączeń TCP dzięki utrzymywaniu otwartych połączeń między klientem a serwerem (także dla komunikacji proxy-backend o czym zaraz wspomnę) po zakończenu połączenia HTTP. Połączenie HTTP `Keep-Alive` lub połączenie trwałe to pomysł użycia jednego połączenia TCP do wysyłania i odbierania wielu żądań/odpowiedzi HTTP (`Keep-Alive` działa między żądaniami), w przeciwieństwie do otwierania nowego połączenia dla każdej pary żądań/odpowiedzi.
 
-Może to znacznie zmniejszyć liczbę nowych połączeń TCP, ponieważ NGINX może teraz ponownie wykorzystywać swoje istniejące połączenia (utrzymywanie aktywności) na jednym etapie przesyłania danych.
+Korzystając z mechanizmu `Keep-Alive`, przeglądarka nie musi nawiązywać wielu połączeń (pamiętaj, że nawiązywanie połączeń jest kosztowne) ale używa już ustanowionego połączenia i kontroluje, jak długo pozostaje ono aktywne/otwarte. Dodatkowo połączenia `Keep-Alive` mogą mieć znaczący wpływ na wydajność, zmniejszając obciążenie procesora i sieci potrzebne do otwierania i zamykania połączeń.
 
-Jeśli twój serwer nadrzędny obsługuje `Keep-Alive` (jest to warunek konieczny) w swojej konfiguracji, NGINX będzie teraz ponownie używał istniejących połączeń TCP bez tworzenia nowych. Może to znacznie zmniejszyć liczbę gniazd w połączeniach `TIME_WAIT` TCP na zajętych serwerach (mniej pracy dla systemu operacyjnego w celu ustanowienia nowych połączeń, mniej pakietów w sieci).
+Z włączonym podtrzymywaniem HTTP w serwerach upstream NGINX zmniejsza opóźnienia, a tym samym poprawia wydajność i zmniejsza prawdopodobieństwo, że zabraknie portów efemerycznych. NGINX może teraz ponownie wykorzystywać swoje istniejące połączenia (utrzymywanie aktywności) na jednym etapie przesyłania danych.
+
+Ta pamięć podręczna połączeń jest przydatna w sytuacjach, gdy NGINX musi stale utrzymywać pewną liczbę otwartych połączeń z serwerem z warstwy backendu.
+
+Jeśli twój serwer nadrzędny obsługuje `Keep-Alive` (jest to warunek konieczny), NGINX będzie teraz ponownie używał istniejących połączeń TCP bez tworzenia nowych. Może to znacznie zmniejszyć liczbę gniazd w stanie `TIME_WAIT` co oznacza mniej pracy dla systemu operacyjnego w celu ustanowienia nowych połączeń i mniej pakietów w sieci.
 
   > Pamiętaj: połączenia `Keep-Alive` są obsługiwane tylko od HTTP/1.1.
 
@@ -39,7 +43,7 @@ server {
   location / {
 
     # NGINX domyślnie komunikuje się tylko za pomocą protokołu HTTP/1
-    # z serwerami nadrzędnymi, keepalive jest włączony tylko w HTTP/1.1:
+    # z serwerami nadrzędnymi, keepalive jest obsługiwany w HTTP/1.1:
     proxy_http_version 1.1;
 
     # Usuń nagłówek połączenia, jeśli klient go wysyła,
@@ -56,6 +60,7 @@ server {
 Oraz test "standardowej" komunikacji oraz takiej, która wykorzystuje `Keep-Alive`:
 
 ```bash
+# Bez włączonego mechanizmu Keep-Alive:
 wrk -c 500 -t 6 -d 60s -R 15000 -H "Host: example.com" https://example.com/
 Running 1m test @ https://example.com/
   6 threads and 500 connections
@@ -68,6 +73,7 @@ Running 1m test @ https://example.com/
 Requests/sec:   3806.96
 Transfer/sec:      1.30MB
 
+# Z włączonym mechanizmem Keep-Alive:
 wrk -c 500 -t 6 -d 60s -R 15000 -H "Host: example.com" https://example.com/
 Running 1m test @ https://example.com/
   6 threads and 500 connections
