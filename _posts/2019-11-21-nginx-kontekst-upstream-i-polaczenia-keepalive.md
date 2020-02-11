@@ -7,7 +7,7 @@ tags: [publications]
 comments: false
 favorite: false
 seo:
-  date_modified: 2020-02-11 11:07:53 +0100
+  date_modified: 2020-02-11 11:59:15 +0100
 ---
 
 Oryginalny model HTTP (w tym HTTP/1.0) definiuje połączenia krótkotrwałe jako standardową metodę komunikacji. Każde żądanie HTTP jest realizowane we własnym połączeniu; oznacza to, że uzgadnianie TCP następuje przed każdym żądaniem. Klient tworzy nowe połączenie TCP dla każdej sesji (a połączenie zostaje zerwane po zakończeniu sesji).
